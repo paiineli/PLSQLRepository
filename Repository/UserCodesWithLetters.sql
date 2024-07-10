@@ -1,3 +1,6 @@
+-- PL/SQL query for extracts information about healthcare service providers registered in a system which have user codes as letters.
+-- Author: Lucas Paineli
+
 SELECT Y.PROVIDER, Y.USERNAME, Y.EMPLOYEE, Y.OBSERVATION
   FROM (SELECT X.PROVIDER, X.USERNAME, X.EMPLOYEE, X.OBSERVATION
           FROM (SELECT DISTINCT REGEXP_REPLACE(A.MEMBER_CODE,
