@@ -1,4 +1,5 @@
-"""This SQL query extracts information about healthcare service providers registered in a system, including their recent access details and additional account information."""
+-- PL/SQL query for extracts information about healthcare service providers registered in a system, including their recent access details and additional account information.
+-- Author: Lucas Paineli
 
 SELECT X.PROVIDER,
        X.USERNAME,
